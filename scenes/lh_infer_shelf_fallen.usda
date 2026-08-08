@@ -1,0 +1,221 @@
+#usda 1.0
+(
+    defaultPrim = "world"
+    endTimeCode = 0
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    startTimeCode = -1
+    upAxis = "Z"
+)
+
+def Xform "world"
+{
+    quatf xformOp:orient = (1, 0, 0, 0)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+    def Material "PhysicsMaterial" (
+        prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+    )
+    {
+        float physics:dynamicFriction = 2
+        float physics:staticFriction = 2
+        uniform token physxMaterial:frictionCombineMode = "max"
+    }
+
+    def "table" (
+        prepend payload = @../../fixtures/table_oak.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (1, -4.523672e-8, -4.3882244e-7, 3.5097592e-8)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.549971342086792, -0.00002490881524863653, -0.34700000286102295)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "franka_table" (
+        prepend payload = @../../fixtures/franka_table.usd@
+    )
+    {
+        quatd xformOp:orient = (6.123233995736766e-17, 0, 0, 1)
+        double3 xformOp:translate = (-0.087, 0, 0)
+    }
+
+    def Xform "GroundPlane"
+    {
+        token visibility = "invisible"
+        quatf xformOp:orient = (1, 0, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, -0.697)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def Mesh "CollisionMesh"
+        {
+            uniform bool doubleSided = 0
+            int[] faceVertexCounts = [4]
+            int[] faceVertexIndices = [0, 1, 2, 3]
+            normal3f[] normals = [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1)]
+            point3f[] points = [(-25, -25, 0), (25, -25, 0), (25, 25, 0), (-25, 25, 0)]
+            color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+            texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1)] (
+                interpolation = "varying"
+            )
+        }
+
+        def Plane "CollisionPlane" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            uniform token axis = "Z"
+            uniform token purpose = "guide"
+        }
+    }
+
+    def "wireshelving_a01" (
+        prepend payload = @../../objects/vomp/wireshelving_a01/wireshelving_a01.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.99999994, 3.2217944e-8, -0.0000012040256, 0.00034543767)
+        float3 xformOp:scale = (0.44, 0.44, 0.44)
+        double3 xformOp:translate = (0.6204348802566528, 0.00034373742528259754, 0.003000020980834961)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "ketchup_bottle" (
+        prepend payload = @../../objects/hope/ketchup_bottle.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.9999777, -0.00079921196, -0.006619129, 0.00042879255)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.619587242603302, 0.006530835293233395, 0.2821146845817566)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "mustard_bottle" (
+        prepend payload = @../../objects/hope/mustard_bottle.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.9992087, 0.011249083, 0.012262992, -0.036125656)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.6228446960449219, 0.10534271597862244, 0.28768306970596313)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "ranch_dressing" (
+        prepend payload = @../../objects/hope/ranch_dressing.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.69468415, 0.03177027, 0.7179164, 0.031632643)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.3800191283226013, -0.00007655334775336087, 0.023607751354575157)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "wooden_bowl" (
+        prepend payload = @../../objects/hot3d/wooden_bowl.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.9913963, -0.0019512315, 0.00083311024, -0.13087729)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.6244385242462158, 0.42274269461631775, 0.002769850194454193)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "banana" (
+        prepend payload = @../../objects/ycb/banana.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (-0.25081632, 0.718475, -0.15457648, 0.6300722)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.6170310378074646, 0.4233453869819641, 0.07264016568660736)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "banana_1" (
+        prepend payload = @../../objects/ycb/banana.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (-0.09155798, 0.7601969, -0.043361273, 0.6417457)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.5842594504356384, 0.4117535650730133, 0.06849819421768188)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "banana_2" (
+        prepend payload = @../../objects/ycb/banana.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.34061804, 0.29488328, -0.28597125, 0.84572077)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.6613290905952454, 0.40365299582481384, 0.09415875375270844)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "banana_3" (
+        prepend payload = @../../objects/ycb/banana.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.06329785, -0.4413225, 0.7366986, -0.50843185)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.6923623085021973, 0.4277955889701843, 0.12225234508514404)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "lemon_02" (
+        prepend payload = @../../objects/fruits_veggies/lemon2.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (-0.07564809, -0.2818297, 0.87128013, -0.39461407)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.674583375453949, 0.4312545657157898, 0.057160161435604095)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "lemon_02_1" (
+        prepend payload = @../../objects/fruits_veggies/lemon2.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (-0.30422878, 0.65647465, -0.64701504, 0.24053562)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.6333657503128052, 0.44550982117652893, 0.049411457031965256)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def PhysicsScene "PhysicsScene" (
+        prepend apiSchemas = ["PhysxSceneAPI"]
+    )
+    {
+        uniform token physxScene:broadphaseType = "MBP"
+        bool physxScene:enableCCD = 1
+        bool physxScene:enableGPUDynamics = 0
+        uniform uint physxScene:minPositionIterationCount = 64
+        uniform token physxScene:solverType = "PGS"
+        uint physxScene:timeStepsPerSecond = 240
+    }
+}
+

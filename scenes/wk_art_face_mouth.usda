@@ -1,0 +1,199 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (5, 0, 0)
+                double radius = 5
+            }
+            dictionary Perspective = {
+                double3 position = (0.23539537122340196, 0.9492483223956721, 0.8022424312953634)
+                double3 target = (2.0016964415762177, -1.3391212387045979, -2.375959272140942)
+            }
+            dictionary Right = {
+                double3 position = (0, -5, 0)
+                double radius = 5
+            }
+            dictionary Top = {
+                double3 position = (0, 0, 5)
+                double radius = 5
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        dictionary omni_layer = {
+            string authoring_layer = "./wk_art_face_mouth.usda"
+        }
+        dictionary renderSettings = {
+        }
+    }
+    defaultPrim = "world"
+    endTimeCode = 0
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    startTimeCode = -1
+    upAxis = "Z"
+)
+
+def Xform "world"
+{
+    quatf xformOp:orient = (1, 0, 0, 0)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+    def Material "PhysicsMaterial" (
+        prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+    )
+    {
+        float physics:dynamicFriction = 2
+        float physics:staticFriction = 2
+        uniform token physxMaterial:frictionCombineMode = "max"
+    }
+
+    def "table" (
+        prepend payload = @../../fixtures/table_oak.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (1, -2.6751943e-8, 1.04763785e-7, -1.730004e-8)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.5469802618026733, 0.00022578064817935228, -0.3470000624656677)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "franka_table" (
+        prepend payload = @../../fixtures/franka_table.usd@
+    )
+    {
+        quatd xformOp:orient = (6.123233995736766e-17, 0, 0, 1)
+        double3 xformOp:translate = (-0.087, 0, 0)
+    }
+
+    def Xform "GroundPlane"
+    {
+        token visibility = "invisible"
+        quatf xformOp:orient = (1, 0, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, -0.697)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def Mesh "CollisionMesh"
+        {
+            uniform bool doubleSided = 0
+            int[] faceVertexCounts = [4]
+            int[] faceVertexIndices = [0, 1, 2, 3]
+            normal3f[] normals = [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1)]
+            point3f[] points = [(-25, -25, 0), (25, -25, 0), (25, 25, 0), (-25, 25, 0)]
+            color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+            texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1)] (
+                interpolation = "varying"
+            )
+        }
+
+        def Plane "CollisionPlane" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            uniform token axis = "Z"
+            uniform token purpose = "guide"
+        }
+    }
+
+    def "face_outline" (
+        prepend payload = @../../objects/art_shapes/art_shape_red_orange_hollow_circle_30.usda@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.99998826, 0.00020540068, -0.000047501406, 0.0048466497)
+        float3 xformOp:scale = (0.58745503, 0.5691061, 1)
+        double3 xformOp:translate = (0.5513918995857239, -0.0000697052018949762, 0.01153083611279726)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "left_eye" (
+        prepend payload = @../../objects/art_shapes/art_shape_dark_blue_circle_4.usda@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.999936, 0.011231087, -0.000017136284, -0.0013766215)
+        float3 xformOp:scale = (0.5159406, 1, 1)
+        double3 xformOp:translate = (0.5769036412239075, 0.026976509019732475, 0.011498067528009415)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "right_eye" (
+        prepend payload = @../../objects/art_shapes/art_shape_dark_blue_circle_4.usda@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.9999356, 0.011230626, -0.000018832237, -0.0016135006)
+        float3 xformOp:scale = (0.56633, 1, 1)
+        double3 xformOp:translate = (0.5816149115562439, -0.024414226412773132, 0.011498057283461094)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "nose" (
+        prepend payload = @../../objects/art_shapes/art_shape_coral_triangle_equilateral_4.usda@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.2696091, -0.003336252, 0.0011028213, 0.96296346)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.5388690829277039, -0.002271647099405527, 0.011382613331079483)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "mouth" (
+        prepend payload = @../../objects/art_shapes/art_shape_coral_rectangle_2x4.usda@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.42542166, -0.0030751587, -0.00654067, 0.9049664)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.38262051343917847, 0.20080716907978058, 0.011376360431313515)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "distractor_long" (
+        prepend payload = @../../objects/art_shapes/art_shape_dark_blue_hollow_circle_30.usda@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.99951386, -0.00046066663, 0.029284501, -0.01069066)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.5886039733886719, 0.34391161799430847, 0.020180415362119675)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "distractor_blue" (
+        prepend payload = @../../objects/art_shapes/art_shape_dark_blue_triangle_right_4x4.usda@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.995893, 0.0012537113, 0.003149301, -0.0904746)
+        float3 xformOp:scale = (1.5, 1.5, 1)
+        double3 xformOp:translate = (0.4548925757408142, 0.3747272491455078, 0.01123607624322176)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def PhysicsScene "PhysicsScene" (
+        prepend apiSchemas = ["PhysxSceneAPI"]
+    )
+    {
+        uniform token physxScene:broadphaseType = "MBP"
+        bool physxScene:enableCCD = 1
+        bool physxScene:enableGPUDynamics = 0
+        uniform uint physxScene:minPositionIterationCount = 64
+        uniform token physxScene:solverType = "PGS"
+        uint physxScene:timeStepsPerSecond = 240
+    }
+}
+

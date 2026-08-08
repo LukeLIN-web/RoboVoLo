@@ -1,0 +1,66 @@
+{
+  "name": "robovolo",
+  "version": "1.0",
+  "description": "",
+  "created": "2026-05-20T02:01:41.847559",
+  "source_split": "robovolo",
+  "num_tasks": 126,
+  "num_scenes": 123,
+  "categories": [
+    {
+      "id": "MS",
+      "name": "Memory - Swap",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "MO",
+      "name": "Memory - Order",
+      "color": "#4ecdc4"
+    },
+    {
+      "id": "MR",
+      "name": "Memory - Recall",
+      "color": "#f7dc6f"
+    },
+    {
+      "id": "CS",
+      "name": "Common Sense - Sorting",
+      "color": "#ff9f43"
+    },
+    {
+      "id": "CK",
+      "name": "Common Sense - Kitting",
+      "color": "#a29bfe"
+    },
+    {
+      "id": "CR",
+      "name": "Common Sense - Recovery",
+      "color": "#fd79a8"
+    },
+    {
+      "id": "CI",
+      "name": "Common Sense - Inference",
+      "color": "#00cec9"
+    },
+    {
+      "id": "WM",
+      "name": "World Knowledge - Math",
+      "color": "#9b59b6"
+    },
+    {
+      "id": "WA",
+      "name": "World Knowledge - Art",
+      "color": "#e67e22"
+    },
+    {
+      "id": "WC",
+      "name": "World Knowledge - Chemistry",
+      "color": "#2ecc71"
+    },
+    {
+      "id": "WR",
+      "name": "World Knowledge - Recycling",
+      "color": "#27ae60"
+    }
+  ]
+}

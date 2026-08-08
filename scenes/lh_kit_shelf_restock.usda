@@ -1,0 +1,163 @@
+#usda 1.0
+(
+    defaultPrim = "world"
+    endTimeCode = 0
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    startTimeCode = -1
+    upAxis = "Z"
+)
+
+def Xform "world"
+{
+    quatf xformOp:orient = (1, 0, 0, 0)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+    def Material "PhysicsMaterial" (
+        prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+    )
+    {
+        float physics:dynamicFriction = 2
+        float physics:staticFriction = 2
+        uniform token physxMaterial:frictionCombineMode = "max"
+    }
+
+    def "table" (
+        prepend payload = @../../fixtures/table_oak.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (1, 9.928524e-9, 1.0898638e-7, 3.7151968e-9)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.546984851360321, -0.00014242189354263246, -0.3470000624656677)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "franka_table" (
+        prepend payload = @../../fixtures/franka_table.usd@
+    )
+    {
+        quatd xformOp:orient = (6.123233995736766e-17, 0, 0, 1)
+        double3 xformOp:translate = (-0.087, 0, 0)
+    }
+
+    def Xform "GroundPlane"
+    {
+        token visibility = "invisible"
+        quatf xformOp:orient = (1, 0, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, -0.697)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def Mesh "CollisionMesh"
+        {
+            uniform bool doubleSided = 0
+            int[] faceVertexCounts = [4]
+            int[] faceVertexIndices = [0, 1, 2, 3]
+            normal3f[] normals = [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1)]
+            point3f[] points = [(-25, -25, 0), (25, -25, 0), (25, 25, 0), (-25, 25, 0)]
+            color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+            texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1)] (
+                interpolation = "varying"
+            )
+        }
+
+        def Plane "CollisionPlane" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            uniform token axis = "Z"
+            uniform token purpose = "guide"
+        }
+    }
+
+    def "red_crate" (
+        prepend payload = @../../objects/simready/storage_containers/red_crate/red_crate.usda@
+    )
+    {
+        vector3f physics:angularVelocity
+        float physics:mass = 5
+        vector3f physics:velocity
+        quatf xformOp:orient = (1, -2.3343141e-7, -2.0024953e-7, 9.519985e-10)
+        float3 xformOp:scale = (0.4, 0.4, 0.4)
+        double3 xformOp:translate = (0.6000003814697266, 0.21000012755393982, 0.0027469806373119354)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "red_crate_1" (
+        prepend payload = @../../objects/simready/storage_containers/red_crate/red_crate.usda@
+    )
+    {
+        vector3f physics:angularVelocity
+        float physics:mass = 5
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.99998, -0.00073003565, 0.00047839878, -0.0062714294)
+        float3 xformOp:scale = (0.4, 0.4, 0.4)
+        double3 xformOp:translate = (0.5995083451271057, -0.20622651278972626, 0.0027461927384138107)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "ketchup_bottle" (
+        prepend payload = @../../objects/hope/ketchup_bottle.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.99971503, -0.0014162448, -0.00823733, -0.02236071)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.569205105304718, 0.2103225141763687, 0.07971036434173584)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "mustard_bottle" (
+        prepend payload = @../../objects/hope/mustard_bottle.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.9998327, 0.010850947, 0.0122701125, -0.008142719)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.6318913698196411, 0.2079399675130844, 0.08525779843330383)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "ranch_dressing" (
+        prepend payload = @../../objects/hope/ranch_dressing.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.9994502, 0.001315608, 0.0018056729, 0.03307965)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.6644299030303955, -0.21002666652202606, 0.07936914265155792)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "bbq_sauce_bottle" (
+        prepend payload = @../../objects/hope/bbq_sauce_bottle.usd@
+    )
+    {
+        vector3f physics:angularVelocity
+        vector3f physics:velocity
+        quatf xformOp:orient = (0.9999932, -0.0022984482, -0.0025156988, 0.001402483)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0.37965288758277893, 0.00023386678367387503, 0.07690819352865219)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def PhysicsScene "PhysicsScene" (
+        prepend apiSchemas = ["PhysxSceneAPI"]
+    )
+    {
+        uniform token physxScene:broadphaseType = "MBP"
+        bool physxScene:enableCCD = 1
+        bool physxScene:enableGPUDynamics = 0
+        uniform uint physxScene:minPositionIterationCount = 64
+        uniform token physxScene:solverType = "PGS"
+        uint physxScene:timeStepsPerSecond = 240
+    }
+}
+

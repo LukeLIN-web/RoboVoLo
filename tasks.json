@@ -1,0 +1,1965 @@
+[
+  {
+    "id": "L1",
+    "task_file": "swap_bowl_fruits.py",
+    "scene": "lh_swap_bowl_fruits.usda",
+    "category": "MS",
+    "category_name": "Memory - Swap",
+    "description": "SwapBowlFruitsTask",
+    "instruction": "Swap the fruits between the two bowls",
+    "attributes": [
+      "memory",
+      "swapping"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L2",
+    "task_file": "reverse_block_tower.py",
+    "scene": "lh_reverse_block_tower.usda",
+    "category": "MO",
+    "category_name": "Memory - Order",
+    "description": "ReverseBlockTowerTask",
+    "instruction": "Reverse the stacking order of the three colored blocks",
+    "attributes": [
+      "memory",
+      "ordering",
+      "stacking"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L3",
+    "task_file": "cycle_condiments.py",
+    "scene": "lh_cycle_condiments.usda",
+    "category": "MO",
+    "category_name": "Memory - Order",
+    "description": "CycleCondimentsTask",
+    "instruction": "Rotate each bottle one position to the right \u2014 the rightmost bottle wraps around to the left position",
+    "attributes": [
+      "memory",
+      "ordering",
+      "spatial"
+    ],
+    "episode_length_s": 180
+  },
+  {
+    "id": "L4",
+    "task_file": "unstack_select.py",
+    "scene": "lh_unstack_select.usda",
+    "category": "MR",
+    "category_name": "Memory - Recall",
+    "description": "UnstackSelectTask",
+    "instruction": "Unstack all the cans, then put only the top and bottom cans from the original stack into the bowl \u2014 leave the middle can on the table",
+    "attributes": [
+      "memory",
+      "recall",
+      "stacking"
+    ],
+    "episode_length_s": 150
+  },
+  {
+    "id": "L5",
+    "task_file": "three_container_restore.py",
+    "scene": "lh_three_container_restore.usda",
+    "category": "MR",
+    "category_name": "Memory - Recall",
+    "description": "ThreeContainerRestoreTask",
+    "instruction": "Take all objects out of the three containers and place them on the table, then put the objects that were originally on the table into the serving bowl",
+    "attributes": [
+      "memory",
+      "recall",
+      "multi_container"
+    ],
+    "episode_length_s": 240
+  },
+  {
+    "id": "L6",
+    "task_file": "lh_swap_mug_replace_fruit.py",
+    "scene": "lh_mug_fruits_replace.usda",
+    "category": "MS",
+    "category_name": "Memory - Swap",
+    "description": "SwapMugReplaceFruitTask",
+    "instruction": "Take the item out of the plate and place it on the table. Then put the item that was on the table onto the plate.",
+    "attributes": [
+      "memory",
+      "swapping",
+      "HS",
+      "minimal_memory"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L7",
+    "task_file": "lh_swap_block_positions.py",
+    "scene": "lh_two_blocks_table.usda",
+    "category": "MS",
+    "category_name": "Memory - Swap",
+    "description": "SwapBlockPositionsTask",
+    "instruction": "Swap the positions of the red block and the blue block on the table",
+    "attributes": [
+      "memory",
+      "swapping",
+      "HM",
+      "spatial"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L8",
+    "task_file": "lh_swap_two_bins_cans.py",
+    "scene": "lh_two_bins_cans.usda",
+    "category": "MS",
+    "category_name": "Memory - Swap",
+    "description": "SwapTwoBinsCansTask",
+    "instruction": "Swap the tuna can and the corn can between the two containers",
+    "attributes": [
+      "memory",
+      "swapping",
+      "HM"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L9",
+    "task_file": "lh_swap_bin_replace_block_can.py",
+    "scene": "lh_bin_block_can.usda",
+    "category": "MS",
+    "category_name": "Memory - Swap",
+    "description": "SwapBinReplaceBlockCanTask",
+    "instruction": "Take the item out of the bin and place it on the table. Then put the item that was on the table into the bin.",
+    "attributes": [
+      "memory",
+      "swapping",
+      "HS",
+      "minimal_memory"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L10",
+    "task_file": "lh_swap_bowl_bin_cans.py",
+    "scene": "lh_bowl_bin_cans.usda",
+    "category": "MS",
+    "category_name": "Memory - Swap",
+    "description": "SwapBowlBinCansTask",
+    "instruction": "Swap the spam can and the tuna can between the bowl and the bin",
+    "attributes": [
+      "memory",
+      "swapping",
+      "HM"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L11",
+    "task_file": "lh_swap_bin_replace_fruits.py",
+    "scene": "lh_bin_fruits_replace.usda",
+    "category": "MS",
+    "category_name": "Memory - Swap",
+    "description": "SwapBinReplaceFruitsTask",
+    "instruction": "Take the item out of the container and place it on the table. Then put the item that was on the table into the container.",
+    "attributes": [
+      "memory",
+      "swapping",
+      "HS",
+      "minimal_memory"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L12",
+    "task_file": "lh_swap_rotate_cans_left.py",
+    "scene": "lh_three_cans_row.usda",
+    "category": "MS",
+    "category_name": "Memory - Swap",
+    "description": "RotateCansLeftTask",
+    "instruction": "Take the item out of the container and place it on the table. Then put the item that was on the table into the container.",
+    "attributes": [
+      "memory",
+      "swapping",
+      "HM",
+      "spatial",
+      "cyclic"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L13",
+    "task_file": "lh_swap_cycle_containers.py",
+    "scene": "lh_three_containers_cycle.usda",
+    "category": "MS",
+    "category_name": "Memory - Swap",
+    "description": "CycleContainersTask",
+    "instruction": "Cycle the items through three containers: move the wooden bowl's item to the plastic bowl, the plastic bowl's item to the bin, and the bin's item to the wooden bowl",
+    "attributes": [
+      "memory",
+      "swapping",
+      "HM",
+      "cyclic",
+      "multi_container"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L14",
+    "task_file": "lh_swap_rotate_blocks_cw.py",
+    "scene": "lh_four_blocks_square.usda",
+    "category": "MS",
+    "category_name": "Memory - Swap",
+    "description": "RotateBlocksClockwiseTask",
+    "instruction": "Rotate each block one position clockwise \u2014 each block moves to the next position around the square",
+    "attributes": [
+      "memory",
+      "swapping",
+      "HM",
+      "spatial",
+      "cyclic"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L15",
+    "task_file": "lh_order_spatial_by_stack.py",
+    "scene": "lh_stack_spam_orange.usda",
+    "category": "MO",
+    "category_name": "Memory - Order",
+    "description": "SpatialByStackOrderTask",
+    "instruction": "Reverse the two-block stack",
+    "attributes": [
+      "memory",
+      "ordering",
+      "spatial",
+      "HS"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L16",
+    "task_file": "lh_order_reverse_gy.py",
+    "scene": "lh_stack_gy.usda",
+    "category": "MO",
+    "category_name": "Memory - Order",
+    "description": "ReverseStackGYTask",
+    "instruction": "Reverse the two-block stack",
+    "attributes": [
+      "memory",
+      "ordering",
+      "stacking",
+      "HS"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L17",
+    "task_file": "lh_order_restack_top_on_loose.py",
+    "scene": "lh_partial_stack_3cans.usda",
+    "category": "MO",
+    "category_name": "Memory - Order",
+    "description": "RestackTopOnLooseTask",
+    "instruction": "Two of the three cans are stacked. Take the stack apart. Then stack the one that was on top of the old stack onto the one that was NOT stacked.",
+    "attributes": [
+      "memory",
+      "ordering",
+      "stacking",
+      "HS"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L18",
+    "task_file": "lh_order_line_by_stack.py",
+    "scene": "lh_tower_rbg_bin.usda",
+    "category": "MO",
+    "category_name": "Memory - Order",
+    "description": "LineUpByStackOrderTask",
+    "instruction": "The three blocks are stacked in a tower. Unstack them all onto the table. Then line them up from left to right in their original stacking order \u2014 the one that was on the bottom goes on the left, the one from the top goes on the right.",
+    "attributes": [
+      "memory",
+      "ordering",
+      "spatial",
+      "HM"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L19",
+    "task_file": "lh_order_reverse_cans.py",
+    "scene": "lh_cans_stacked.usda",
+    "category": "MO",
+    "category_name": "Memory - Order",
+    "description": "ReverseCansStackTask",
+    "instruction": "Reverse the two-can stack",
+    "attributes": [
+      "memory",
+      "ordering",
+      "stacking",
+      "HS"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L20",
+    "task_file": "lh_order_split_tower_halves.py",
+    "scene": "lh_four_tower_bowl_bin.usda",
+    "category": "MO",
+    "category_name": "Memory - Order",
+    "description": "SplitTowerHalvesTask",
+    "instruction": "The four blocks are stacked in a tower. Take them all apart. Then build two separate two-block towers \u2014 one from the top half of the original tower and one from the bottom half, keeping each pair in their original order",
+    "attributes": [
+      "memory",
+      "ordering",
+      "stacking",
+      "HM"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L21",
+    "task_file": "lh_order_reverse_line.py",
+    "scene": "lh_three_items_line.usda",
+    "category": "MO",
+    "category_name": "Memory - Order",
+    "description": "ReverseLineTask",
+    "instruction": "Reverse the order of the three items in the line \u2014 the leftmost goes to the right and the rightmost goes to the left",
+    "attributes": [
+      "memory",
+      "ordering",
+      "spatial",
+      "HM"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L22",
+    "task_file": "lh_order_merge_stacks.py",
+    "scene": "lh_two_paired_stacks.usda",
+    "category": "MO",
+    "category_name": "Memory - Order",
+    "description": "MergeStacksTask",
+    "instruction": "Merge the two two-block stacks into a single four-block tower. The left stack's blocks form the bottom half and the right stack's blocks go on top \u2014 keep the original stacking order within each pair",
+    "attributes": [
+      "memory",
+      "ordering",
+      "stacking",
+      "HM"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L23",
+    "task_file": "lh_recall_stack_sort.py",
+    "scene": "lh_partial_stack_3blocks_bowl_bin.usda",
+    "category": "MR",
+    "category_name": "Memory - Recall",
+    "description": "RecallStackSortTask",
+    "instruction": "Three blocks are on the table \u2014 two are stacked and one is loose. Take the top block off the stack and put it in the bowl. Then put the block that was on the bottom of the stack into the bin.",
+    "attributes": [
+      "memory",
+      "recall",
+      "stacking",
+      "HS"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L24",
+    "task_file": "lh_recall_bottom_to_bowl.py",
+    "scene": "lh_stack_rb_bowl_bin.usda",
+    "category": "MR",
+    "category_name": "Memory - Recall",
+    "description": "RecallBottomToBowlTask",
+    "instruction": "The blocks are stacked. Take them apart. Then put only the block that was on the bottom into the bowl \u2014 leave the other on the table.",
+    "attributes": [
+      "memory",
+      "recall",
+      "stacking",
+      "HS"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L25",
+    "task_file": "lh_recall_stack_top_among_four.py",
+    "scene": "lh_recall_four_blocks_bowl.usda",
+    "category": "MR",
+    "category_name": "Memory - Recall",
+    "description": "RecallStackTopAmongFourTask",
+    "instruction": "Two of the four blocks are stacked. Take the top one off and place it on the table. Next put the block that was on the bottom of the stack into the bowl.",
+    "attributes": [
+      "memory",
+      "recall",
+      "stacking",
+      "HS",
+      "distractors"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L26",
+    "task_file": "lh_recall_unstack_top_to_bin.py",
+    "scene": "lh_tower_rbg_bin.usda",
+    "category": "MR",
+    "category_name": "Memory - Recall",
+    "description": "RecallUnstackTopToBinTask",
+    "instruction": "Unstack all three blocks onto the table. Then put the block that was originally in the middle into the bin.",
+    "attributes": [
+      "memory",
+      "recall",
+      "stacking",
+      "HM"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L27",
+    "task_file": "lh_recall_restack_cans.py",
+    "scene": "lh_three_cans_tower.usda",
+    "category": "MR",
+    "category_name": "Memory - Recall",
+    "description": "RecallRestackCansTask",
+    "instruction": "Unstack the three cans and place them all on the table. Then rebuild the stack in the same original order at a different spot on the table.",
+    "attributes": [
+      "memory",
+      "recall",
+      "HM",
+      "stacking"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L28",
+    "task_file": "lh_recall_top_half_to_bin.py",
+    "scene": "lh_four_tower_bowl_bin.usda",
+    "category": "MR",
+    "category_name": "Memory - Recall",
+    "description": "RecallTopHalfToBinTask",
+    "instruction": "Unstack all four blocks onto the table. Then put the two blocks that were in the bottom half of the tower into the bin.",
+    "attributes": [
+      "memory",
+      "recall",
+      "HM",
+      "stacking"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L29",
+    "task_file": "lh_recall_tower_top_bottom.py",
+    "scene": "lh_four_tower_bowl_bin.usda",
+    "category": "MR",
+    "category_name": "Memory - Recall",
+    "description": "RecallTowerTopBottomTask",
+    "instruction": "Unstack all four blocks. Then build a two-block tower using only the block that was on the very top and the one that was on the very bottom \u2014 leave the middle two on the table.",
+    "attributes": [
+      "memory",
+      "recall",
+      "HM",
+      "stacking"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L30",
+    "task_file": "lh_recall_sort_by_type.py",
+    "scene": "lh_bowls_bin_sort.usda",
+    "category": "MR",
+    "category_name": "Memory - Recall",
+    "description": "RecallRestoreContainersTask",
+    "instruction": "Move all items from the container that has less items to the container that has more items.",
+    "attributes": [
+      "memory",
+      "recall",
+      "HL",
+      "sorting",
+      "categorization"
+    ],
+    "episode_length_s": 240
+  },
+  {
+    "id": "L31",
+    "task_file": "lh_sort_fresh_vs_canned.py",
+    "scene": "lh_sort_fresh_vs_canned.usda",
+    "category": "CS",
+    "category_name": "Common Sense - Sorting",
+    "description": "SortFreshVsCannedTask",
+    "instruction": "Sort the remaining items into the correct containers.",
+    "attributes": [
+      "reasoning",
+      "sorting",
+      "common_sense"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L32",
+    "task_file": "lh_sort_forks_spoons.py",
+    "scene": "lh_sort_forks_spoons.usda",
+    "category": "CS",
+    "category_name": "Common Sense - Sorting",
+    "description": "SortForksAndSpoonsTask",
+    "instruction": "Put each utensil in the bowl with matching ones.",
+    "attributes": [
+      "reasoning",
+      "sorting",
+      "common_sense"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L33",
+    "task_file": "lh_sort_condiments_vs_cans.py",
+    "scene": "lh_sort_condiments_vs_cans.usda",
+    "category": "CS",
+    "category_name": "Common Sense - Sorting",
+    "description": "SortCondimentsVsCansTask",
+    "instruction": "Put each item in the bin with similar ones.",
+    "attributes": [
+      "reasoning",
+      "sorting",
+      "common_sense"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L34",
+    "task_file": "lh_sort_food_utensils.py",
+    "scene": "lh_sort_food_utensils.usda",
+    "category": "CS",
+    "category_name": "Common Sense - Sorting",
+    "description": "SortFoodAndUtensilsTask",
+    "instruction": "Put each table item where similar ones already are.",
+    "attributes": [
+      "reasoning",
+      "sorting",
+      "common_sense"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L35",
+    "task_file": "lh_sort_canned_veggies_fruits.py",
+    "scene": "lh_sort_canned_veggies_fruits.usda",
+    "category": "CS",
+    "category_name": "Common Sense - Sorting",
+    "description": "SortCannedVeggiesAndFruitsTask",
+    "instruction": "Sort the cans on the table into the correct bowls.",
+    "attributes": [
+      "reasoning",
+      "sorting",
+      "common_sense",
+      "semantics"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L36",
+    "task_file": "lh_sort_produce_dairy.py",
+    "scene": "lh_sort_produce_dairy.usda",
+    "category": "CS",
+    "category_name": "Common Sense - Sorting",
+    "description": "SortProduceAndDairyTask",
+    "instruction": "Each container holds a category. Put the table items where they belong.",
+    "attributes": [
+      "reasoning",
+      "sorting",
+      "common_sense"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L37",
+    "task_file": "lh_sort_food_nonfood.py",
+    "scene": "lh_sort_food_nonfood.usda",
+    "category": "CS",
+    "category_name": "Common Sense - Sorting",
+    "description": "SortFoodVsNonFoodTask",
+    "instruction": "Sort the items on the table \u2014 each container shows you what type goes there.",
+    "attributes": [
+      "reasoning",
+      "sorting",
+      "common_sense"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L38",
+    "task_file": "lh_sort_fridge_vs_pantry.py",
+    "scene": "lh_sort_fridge_vs_pantry.usda",
+    "category": "CS",
+    "category_name": "Common Sense - Sorting",
+    "description": "SortFridgeVsPantryTask",
+    "instruction": "Sort the remaining items by storage temperature.",
+    "attributes": [
+      "reasoning",
+      "sorting",
+      "common_sense"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L39",
+    "task_file": "lh_kit_can_fruit_pair.py",
+    "scene": "lh_kit_can_fruit_pair.usda",
+    "category": "CK",
+    "category_name": "Common Sense - Kitting",
+    "description": "KitCanFruitPairTask",
+    "instruction": "Each bowl should contain a can and a fruit.",
+    "attributes": [
+      "reasoning",
+      "kitting",
+      "common_sense",
+      "pattern_completion"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L40",
+    "task_file": "lh_kit_three_bins_blocks.py",
+    "scene": "lh_kit_three_bins_blocks.usda",
+    "category": "CK",
+    "category_name": "Common Sense - Kitting",
+    "description": "KitThreeBinsBlocksTask",
+    "instruction": "Each bin should have a block. Fill the empty one.",
+    "attributes": [
+      "reasoning",
+      "kitting",
+      "common_sense",
+      "pattern_completion"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L41",
+    "task_file": "lh_kit_utensil_sets.py",
+    "scene": "lh_kit_utensil_sets.usda",
+    "category": "CK",
+    "category_name": "Common Sense - Kitting",
+    "description": "KitUtensilSetsTask",
+    "instruction": "Each bowl groups one type of utensil. Add the missing one to complete the set.",
+    "attributes": [
+      "reasoning",
+      "kitting",
+      "common_sense",
+      "pattern_completion"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L42",
+    "task_file": "lh_kit_balance_bins.py",
+    "scene": "lh_kit_balance_bins.usda",
+    "category": "CK",
+    "category_name": "Common Sense - Kitting",
+    "description": "KitBalanceBinsTask",
+    "instruction": "Distribute the table items so both bins end up with the same number of items.",
+    "attributes": [
+      "reasoning",
+      "kitting",
+      "common_sense",
+      "counting"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L43",
+    "task_file": "lh_kit_fruit_utensil.py",
+    "scene": "lh_kit_fruit_utensil.usda",
+    "category": "CK",
+    "category_name": "Common Sense - Kitting",
+    "description": "KitFruitUtensilTask",
+    "instruction": "Both bowls should have a similar setup. Complete the incomplete one.",
+    "attributes": [
+      "reasoning",
+      "kitting",
+      "common_sense",
+      "pattern_completion"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L44",
+    "task_file": "lh_kit_shelf_restock.py",
+    "scene": "lh_kit_shelf_restock.usda",
+    "category": "CK",
+    "category_name": "Common Sense - Kitting",
+    "description": "KitShelfRestockTask",
+    "instruction": "Both crates should be equally stocked. Add what's needed.",
+    "attributes": [
+      "reasoning",
+      "kitting",
+      "common_sense",
+      "counting"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L45",
+    "task_file": "lh_kit_equal_fruits.py",
+    "scene": "lh_kit_equal_fruits.usda",
+    "category": "CK",
+    "category_name": "Common Sense - Kitting",
+    "description": "KitEqualFruitsTask",
+    "instruction": "Both bowls should have the three items. Even them out.",
+    "attributes": [
+      "reasoning",
+      "kitting",
+      "common_sense",
+      "counting"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L46",
+    "task_file": "lh_kit_lunch_pairs.py",
+    "scene": "lh_kit_lunch_pairs.usda",
+    "category": "CK",
+    "category_name": "Common Sense - Kitting",
+    "description": "KitLunchPairsTask",
+    "instruction": "One bin has a complete set. Make the other one match.",
+    "attributes": [
+      "reasoning",
+      "kitting",
+      "common_sense",
+      "distractors"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L47",
+    "task_file": "lh_recover_fruit_among_cans.py",
+    "scene": "lh_recover_fruit_among_cans.usda",
+    "category": "CR",
+    "category_name": "Common Sense - Recovery",
+    "description": "RecoverFruitAmongCansTask",
+    "instruction": "One item in the bin doesn't belong with the others. Take it out.",
+    "attributes": [
+      "reasoning",
+      "recovery",
+      "common_sense",
+      "anomaly_detection"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L48",
+    "task_file": "lh_recover_can_among_fruits.py",
+    "scene": "lh_recover_can_among_fruits.usda",
+    "category": "CR",
+    "category_name": "Common Sense - Recovery",
+    "description": "RecoverCanAmongFruitsTask",
+    "instruction": "Something in the bowl doesn't fit with the rest. Remove it.",
+    "attributes": [
+      "reasoning",
+      "recovery",
+      "common_sense",
+      "anomaly_detection"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L49",
+    "task_file": "lh_recover_fallen_fruit.py",
+    "scene": "lh_recover_fallen_fruit.usda",
+    "category": "CR",
+    "category_name": "Common Sense - Recovery",
+    "description": "RecoverFallenFruitTask",
+    "instruction": "an object that belongs in the bowl has fallen out. Put it back",
+    "attributes": [
+      "reasoning",
+      "recovery",
+      "common_sense",
+      "spatial_inference"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L50",
+    "task_file": "lh_recover_wrong_shelf.py",
+    "scene": "lh_recover_wrong_shelf.usda",
+    "category": "CR",
+    "category_name": "Common Sense - Recovery",
+    "description": "RecoverWrongShelfTask",
+    "instruction": "Something on the shelf is out of place. Remove it and place it on the table.",
+    "attributes": [
+      "reasoning",
+      "recovery",
+      "common_sense",
+      "anomaly_detection"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L51",
+    "task_file": "lh_recover_spill.py",
+    "scene": "lh_recover_spill.usda",
+    "category": "CR",
+    "category_name": "Common Sense - Recovery",
+    "description": "RecoverSpillTask",
+    "instruction": "Some items got disorganized. Clean it up.",
+    "attributes": [
+      "reasoning",
+      "recovery",
+      "common_sense",
+      "spatial_inference"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L52",
+    "task_file": "lh_recover_toy_in_bowl.py",
+    "scene": "lh_recover_toy_in_bowl.usda",
+    "category": "CR",
+    "category_name": "Common Sense - Recovery",
+    "description": "RecoverToyInBowlTask",
+    "instruction": "Something in the bowl doesn't belong. Remove it.",
+    "attributes": [
+      "reasoning",
+      "recovery",
+      "common_sense",
+      "anomaly_detection"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L53",
+    "task_file": "lh_recover_nonfood_in_bin.py",
+    "scene": "lh_recover_nonfood_in_bin.usda",
+    "category": "CR",
+    "category_name": "Common Sense - Recovery",
+    "description": "RecoverNonFoodInBinTask",
+    "instruction": "Something in the bin doesn't belong. Take it out.",
+    "attributes": [
+      "reasoning",
+      "recovery",
+      "common_sense",
+      "anomaly_detection"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L54",
+    "task_file": "lh_recover_misplaced.py",
+    "scene": "lh_recover_misplaced.usda",
+    "category": "CR",
+    "category_name": "Common Sense - Recovery",
+    "description": "RecoverMisplacedTask",
+    "instruction": "One item is in the wrong container. Move it to where it belongs.",
+    "attributes": [
+      "reasoning",
+      "recovery",
+      "common_sense",
+      "categorization"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L55",
+    "task_file": "lh_infer_majority_group.py",
+    "scene": "lh_infer_majority_group.usda",
+    "category": "CI",
+    "category_name": "Common Sense - Inference",
+    "description": "InferMajorityGroupTask",
+    "instruction": "Most items on the table are the same kind. Put them in the bowl and leave the odd one out.",
+    "attributes": [
+      "reasoning",
+      "inference",
+      "common_sense",
+      "majority_rule"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L56",
+    "task_file": "lh_infer_join_group.py",
+    "scene": "lh_infer_join_group.usda",
+    "category": "CI",
+    "category_name": "Common Sense - Inference",
+    "description": "InferJoinGroupTask",
+    "instruction": "One item on the table belongs with the group in the bowl. Put it there. Leave the rest.",
+    "attributes": [
+      "reasoning",
+      "inference",
+      "common_sense",
+      "distractors"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L57",
+    "task_file": "lh_infer_clear_table.py",
+    "scene": "lh_infer_clear_table.usda",
+    "category": "CI",
+    "category_name": "Common Sense - Inference",
+    "description": "InferClearTableTask",
+    "instruction": "Clear the table \u2014 put each item in the container with similar things.",
+    "attributes": [
+      "reasoning",
+      "inference",
+      "common_sense",
+      "exemplar_matching"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L58",
+    "task_file": "lh_infer_triple_sort.py",
+    "scene": "lh_infer_triple_sort.usda",
+    "category": "CI",
+    "category_name": "Common Sense - Inference",
+    "description": "InferTripleSortTask",
+    "instruction": "Three containers, three items. Each item has a home \u2014 figure out where.",
+    "attributes": [
+      "reasoning",
+      "inference",
+      "common_sense",
+      "multi_container"
+    ],
+    "episode_length_s": 150
+  },
+  {
+    "id": "L59",
+    "task_file": "lh_infer_shelf_fallen.py",
+    "scene": "lh_infer_shelf_fallen.usda",
+    "category": "CI",
+    "category_name": "Common Sense - Inference",
+    "description": "InferShelfFallenTask",
+    "instruction": "Something fell. Put it back where it belongs.",
+    "attributes": [
+      "reasoning",
+      "inference",
+      "common_sense",
+      "spatial_inference"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L60",
+    "task_file": "lh_infer_consolidate.py",
+    "scene": "lh_infer_consolidate.usda",
+    "category": "CI",
+    "category_name": "Common Sense - Inference",
+    "description": "InferConsolidateTask",
+    "instruction": "These all belong together. Move them all where the lemon is.",
+    "attributes": [
+      "reasoning",
+      "inference",
+      "common_sense",
+      "multi_source"
+    ],
+    "episode_length_s": 180
+  },
+  {
+    "id": "L61",
+    "task_file": "lh_infer_return_stray.py",
+    "scene": "lh_infer_return_stray.usda",
+    "category": "CI",
+    "category_name": "Common Sense - Inference",
+    "description": "InferReturnStrayTask",
+    "instruction": "One of the items on the table is out of place. Put it in the container where it belongs.",
+    "attributes": [
+      "reasoning",
+      "inference",
+      "common_sense",
+      "selective_action"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L62",
+    "task_file": "lh_infer_complete_set.py",
+    "scene": "lh_infer_complete_set.usda",
+    "category": "CI",
+    "category_name": "Common Sense - Inference",
+    "description": "InferCompleteSetTask",
+    "instruction": "Complete the collection of items in the container",
+    "attributes": [
+      "reasoning",
+      "inference",
+      "common_sense",
+      "set_completion"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L63",
+    "task_file": "math_addition.py",
+    "scene": "wk_math_addition.usda",
+    "category": "WM",
+    "category_name": "World Knowledge - Math",
+    "description": "MathAdditionTask",
+    "instruction": "Move a cube to complete the equation",
+    "attributes": [
+      "world_knowledge",
+      "math",
+      "arithmetic"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L64",
+    "task_file": "math_subtraction.py",
+    "scene": "wk_math_subtraction.usda",
+    "category": "WM",
+    "category_name": "World Knowledge - Math",
+    "description": "MathSubtractionTask",
+    "instruction": "Move a cube to complete the equation",
+    "attributes": [
+      "world_knowledge",
+      "math",
+      "arithmetic"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L65",
+    "task_file": "math_multiply.py",
+    "scene": "wk_math_multiply.usda",
+    "category": "WM",
+    "category_name": "World Knowledge - Math",
+    "description": "MathMultiplyTask",
+    "instruction": "Move a cube to complete the equation",
+    "attributes": [
+      "world_knowledge",
+      "math",
+      "arithmetic"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L66",
+    "task_file": "math_missing_operand.py",
+    "scene": "wk_math_missing_operand.usda",
+    "category": "WM",
+    "category_name": "World Knowledge - Math",
+    "description": "MathMissingOperandTask",
+    "instruction": "Place the appropriate blocks in the blanks to complete the equation",
+    "attributes": [
+      "world_knowledge",
+      "math",
+      "algebra"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L67",
+    "task_file": "math_factor_pair.py",
+    "scene": "wk_math_factor_pair.usda",
+    "category": "WM",
+    "category_name": "World Knowledge - Math",
+    "description": "MathFactorPairTask",
+    "instruction": "Place the appropriate blocks in the blanks to complete the equation",
+    "attributes": [
+      "world_knowledge",
+      "math",
+      "algebra",
+      "multi_step"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L68",
+    "task_file": "math_balance_equation.py",
+    "scene": "wk_math_balance_equation.usda",
+    "category": "WM",
+    "category_name": "World Knowledge - Math",
+    "description": "MathBalanceEquationTask",
+    "instruction": "Place the appropriate blocks in both blanks to complete the equation",
+    "attributes": [
+      "world_knowledge",
+      "math",
+      "algebra",
+      "multi_step"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L69",
+    "task_file": "math_prime_stack.py",
+    "scene": "wk_math_prime_stack.usda",
+    "category": "WM",
+    "category_name": "World Knowledge - Math",
+    "description": "MathPrimeStackTask",
+    "instruction": "Build a stack of cubes out of the prime factors of 30 only",
+    "attributes": [
+      "world_knowledge",
+      "math",
+      "number_theory",
+      "stacking"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L70",
+    "task_file": "math_sum_to_bowl.py",
+    "scene": "wk_math_sum_to_bowl.usda",
+    "category": "WM",
+    "category_name": "World Knowledge - Math",
+    "description": "MathSumToBowlTask",
+    "instruction": "Put exactly three cubes that together add up to 9 into the bowl",
+    "attributes": [
+      "world_knowledge",
+      "math",
+      "combinatorics"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L71",
+    "task_file": "art_stickfigure_head.py",
+    "scene": "wk_art_stickfigure_head.usda",
+    "category": "WA",
+    "category_name": "World Knowledge - Art",
+    "description": "ArtStickfigureHeadTask",
+    "instruction": "Complete the stick figure by placing the missing head",
+    "attributes": [
+      "world_knowledge",
+      "art",
+      "spatial_reasoning"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L72",
+    "task_file": "art_stickfigure_clutter.py",
+    "scene": "wk_art_stickfigure_clutter.usda",
+    "category": "WA",
+    "category_name": "World Knowledge - Art",
+    "description": "ArtStickfigureClutterTask",
+    "instruction": "Complete the stick figure by placing the missing head",
+    "attributes": [
+      "world_knowledge",
+      "art",
+      "spatial_reasoning",
+      "distractors"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L73",
+    "task_file": "art_face_mouth.py",
+    "scene": "wk_art_face_mouth.usda",
+    "category": "WA",
+    "category_name": "World Knowledge - Art",
+    "description": "ArtFaceMouthTask",
+    "instruction": "Complete the face by placing the missing mouth",
+    "attributes": [
+      "world_knowledge",
+      "art",
+      "spatial_reasoning"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L74",
+    "task_file": "art_face_eye.py",
+    "scene": "wk_art_face_eye.usda",
+    "category": "WA",
+    "category_name": "World Knowledge - Art",
+    "description": "ArtFaceEyeTask",
+    "instruction": "Complete the face by placing the missing eye",
+    "attributes": [
+      "world_knowledge",
+      "art",
+      "spatial_reasoning"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L75",
+    "task_file": "art_sailboat.py",
+    "scene": "wk_art_sailboat.usda",
+    "category": "WA",
+    "category_name": "World Knowledge - Art",
+    "description": "ArtSailboatTask",
+    "instruction": "Install the sail on the boat",
+    "attributes": [
+      "world_knowledge",
+      "art",
+      "spatial_reasoning"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L76",
+    "task_file": "art_airplane_tail.py",
+    "scene": "wk_art_airplane_tail.usda",
+    "category": "WA",
+    "category_name": "World Knowledge - Art",
+    "description": "ArtAirplaneTailTask",
+    "instruction": "Complete the airplane by attaching the missing tail fin",
+    "attributes": [
+      "world_knowledge",
+      "art",
+      "spatial_reasoning"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L77",
+    "task_file": "art_car_wheel.py",
+    "scene": "wk_art_car_wheel.usda",
+    "category": "WA",
+    "category_name": "World Knowledge - Art",
+    "description": "ArtCarWheelTask",
+    "instruction": "Install the missing wheel on the car",
+    "attributes": [
+      "world_knowledge",
+      "art",
+      "spatial_reasoning",
+      "distractors"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L78",
+    "task_file": "art_flower_garden.py",
+    "scene": "wk_art_flower_garden.usda",
+    "category": "WA",
+    "category_name": "World Knowledge - Art",
+    "description": "ArtFlowerGardenTask",
+    "instruction": "Complete the garden by placing the missing flower on its stem",
+    "attributes": [
+      "world_knowledge",
+      "art",
+      "spatial_reasoning",
+      "nature"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L79",
+    "task_file": "chem_water.py",
+    "scene": "wk_chem_water.usda",
+    "category": "WC",
+    "category_name": "World Knowledge - Chemistry",
+    "description": "ChemWaterTask",
+    "instruction": "Complete the water molecule by adding the missing element to the bowl",
+    "attributes": [
+      "world_knowledge",
+      "chemistry",
+      "semantics"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L80",
+    "task_file": "chem_noble_gas.py",
+    "scene": "wk_chem_noble_gas.usda",
+    "category": "WC",
+    "category_name": "World Knowledge - Chemistry",
+    "description": "ChemNobleGasTask",
+    "instruction": "Put the non-reactive noble gas into the bin",
+    "attributes": [
+      "world_knowledge",
+      "chemistry",
+      "semantics"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L81",
+    "task_file": "chem_salt.py",
+    "scene": "wk_chem_salt.usda",
+    "category": "WC",
+    "category_name": "World Knowledge - Chemistry",
+    "description": "ChemSaltTask",
+    "instruction": "Complete table salt by adding the missing element to the bowl",
+    "attributes": [
+      "world_knowledge",
+      "chemistry",
+      "semantics"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L82",
+    "task_file": "chem_lightest.py",
+    "scene": "wk_chem_lightest.usda",
+    "category": "WC",
+    "category_name": "World Knowledge - Chemistry",
+    "description": "ChemLightestTask",
+    "instruction": "Put the lightest element into the bowl",
+    "attributes": [
+      "world_knowledge",
+      "chemistry",
+      "semantics"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L83",
+    "task_file": "chem_co2.py",
+    "scene": "wk_chem_co2.usda",
+    "category": "WC",
+    "category_name": "World Knowledge - Chemistry",
+    "description": "ChemCO2Task",
+    "instruction": "Complete carbon dioxide by adding the two missing elements to the basket",
+    "attributes": [
+      "world_knowledge",
+      "chemistry",
+      "semantics",
+      "multi_step"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L84",
+    "task_file": "chem_sort_noble_metal.py",
+    "scene": "wk_chem_sort_noble_metal.usda",
+    "category": "WC",
+    "category_name": "World Knowledge - Chemistry",
+    "description": "ChemSortNobleMetalTask",
+    "instruction": "Sort the elements: put noble gases in the left bin and transition metals in the right bin",
+    "attributes": [
+      "world_knowledge",
+      "chemistry",
+      "sorting",
+      "multi_step"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L85",
+    "task_file": "chem_atomic_stack.py",
+    "scene": "wk_chem_atomic_stack.usda",
+    "category": "WC",
+    "category_name": "World Knowledge - Chemistry",
+    "description": "ChemAtomicStackTask",
+    "instruction": "Stack the first three elements of the periodic table in order of atomic number, lowest on the bottom",
+    "attributes": [
+      "world_knowledge",
+      "chemistry",
+      "stacking",
+      "ordering",
+      "multi_step"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L86",
+    "task_file": "chem_halogen_alkali.py",
+    "scene": "wk_chem_halogen_alkali.usda",
+    "category": "WC",
+    "category_name": "World Knowledge - Chemistry",
+    "description": "ChemHalogenAlkaliTask",
+    "instruction": "Sort the elements: put halogens in the left bin and alkali metals in the right bin",
+    "attributes": [
+      "world_knowledge",
+      "chemistry",
+      "sorting",
+      "multi_step"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L87",
+    "task_file": "recycle_can.py",
+    "scene": "wk_recycle_can.usda",
+    "category": "WR",
+    "category_name": "World Knowledge - Recycling",
+    "description": "RecycleCanTask",
+    "instruction": "Throw away the soda can in the correct bin",
+    "attributes": [
+      "world_knowledge",
+      "recycling",
+      "semantics"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L88",
+    "task_file": "recycle_banana.py",
+    "scene": "wk_recycle_banana.usda",
+    "category": "WR",
+    "category_name": "World Knowledge - Recycling",
+    "description": "RecycleBananaTask",
+    "instruction": "Throw away the banana in the correct bin",
+    "attributes": [
+      "world_knowledge",
+      "recycling",
+      "semantics"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L89",
+    "task_file": "recycle_cup.py",
+    "scene": "wk_recycle_cup.usda",
+    "category": "WR",
+    "category_name": "World Knowledge - Recycling",
+    "description": "RecycleCupTask",
+    "instruction": "Throw away the coffee cup in the correct bin",
+    "attributes": [
+      "world_knowledge",
+      "recycling",
+      "semantics"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L90",
+    "task_file": "recycle_cup_clutter.py",
+    "scene": "wk_recycle_cup_clutter.usda",
+    "category": "WR",
+    "category_name": "World Knowledge - Recycling",
+    "description": "RecycleCupClutterTask",
+    "instruction": "Throw away only the coffee cup",
+    "attributes": [
+      "world_knowledge",
+      "recycling",
+      "semantics",
+      "distractors"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L91",
+    "task_file": "recycle_sort_2.py",
+    "scene": "wk_recycle_sort_2.usda",
+    "category": "WR",
+    "category_name": "World Knowledge - Recycling",
+    "description": "RecycleSort2Task",
+    "instruction": "Sort 2 items into correct bins",
+    "attributes": [
+      "world_knowledge",
+      "recycling",
+      "sorting",
+      "multi_step"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L92",
+    "task_file": "recycle_sort_3.py",
+    "scene": "wk_recycle_sort_3.usda",
+    "category": "WR",
+    "category_name": "World Knowledge - Recycling",
+    "description": "RecycleSort3Task",
+    "instruction": "Sort 3 items into correct bins",
+    "attributes": [
+      "world_knowledge",
+      "recycling",
+      "sorting",
+      "multi_step"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L93",
+    "task_file": "recycle_sort_4.py",
+    "scene": "wk_recycle_sort_4.usda",
+    "category": "WR",
+    "category_name": "World Knowledge - Recycling",
+    "description": "RecycleSort4Task",
+    "instruction": "Sort 4 items into correct bins",
+    "attributes": [
+      "world_knowledge",
+      "recycling",
+      "sorting",
+      "multi_step"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L94",
+    "task_file": "recycle_sort_5.py",
+    "scene": "wk_recycle_sort_5.usda",
+    "category": "WR",
+    "category_name": "World Knowledge - Recycling",
+    "description": "RecycleSort5Task",
+    "instruction": "Sort 5 items into correct bins",
+    "attributes": [
+      "world_knowledge",
+      "recycling",
+      "sorting",
+      "multi_step"
+    ],
+    "episode_length_s": 150
+  },
+  {
+    "id": "L95",
+    "task_file": "xr_behind_bowl.py",
+    "scene": "xr_spatial_behind_bowl.usda",
+    "category": "XS",
+    "category_name": "Complex References - Spatial",
+    "description": "XrBehindBowlTask",
+    "instruction": "Put the fruit that is behind the bowl, from the robot's perspective, onto the plate",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "spatial"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L96",
+    "task_file": "xr_between_bins.py",
+    "scene": "xr_spatial_between_bins_v2.usda",
+    "category": "XS",
+    "category_name": "Complex References - Spatial",
+    "description": "XrBetweenBinsTask",
+    "instruction": "Put only the item that is between the two bins into the bowl",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "spatial"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L97",
+    "task_file": "xr_leftmost_rightmost.py",
+    "scene": "xr_spatial_leftmost_rightmost.usda",
+    "category": "XS",
+    "category_name": "Complex References - Spatial",
+    "description": "XrLeftmostRightmostTask",
+    "instruction": "Three fruits are in a row. Put the leftmost one into the bowl and the rightmost one into the bin",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "spatial"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L98",
+    "task_file": "xr_left_right_mug.py",
+    "scene": "xr_spatial_left_right_mug.usda",
+    "category": "XS",
+    "category_name": "Complex References - Spatial",
+    "description": "XrLeftRightMugTask",
+    "instruction": "Put the fruit to the right of the mug into the bowl, and the fruit to the left of the mug into the bin",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "spatial"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L99",
+    "task_file": "xr_left_of_block.py",
+    "scene": "xr_spatial_left_of_block.usda",
+    "category": "XS",
+    "category_name": "Complex References - Spatial",
+    "description": "XrLeftOfBlockTask",
+    "instruction": "Put all the items to the left of the red block into the bowl. Do not put other items in the bowl.",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "spatial"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L100",
+    "task_file": "xr_nearest_container.py",
+    "scene": "xr_spatial_nearest_container.usda",
+    "category": "XS",
+    "category_name": "Complex References - Spatial",
+    "description": "XrNearestContainerTask",
+    "instruction": "Move the item behind each container into that container",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "spatial"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L101",
+    "task_file": "xr_split_by_block.py",
+    "scene": "xr_spatial_split_by_block.usda",
+    "category": "XS",
+    "category_name": "Complex References - Spatial",
+    "description": "XrSplitByBlockTask",
+    "instruction": "From the perspective of the robot, put the fruits that are in front of the red block into the bowl, and the fruits behind the red block into the basket",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "spatial"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L102",
+    "task_file": "xr_row_split.py",
+    "scene": "xr_spatial_row_split.usda",
+    "category": "XS",
+    "category_name": "Complex References - Spatial",
+    "description": "XrRowSplitTask",
+    "instruction": "Four fruits are in a row between two containers. Put the left two fruits into the left container and the right two into the right container",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "spatial"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L103",
+    "task_file": "xr_biggest_fruit.py",
+    "scene": "xr_size_biggest_fruit.usda",
+    "category": "XZ",
+    "category_name": "Complex References - Size",
+    "description": "XrBiggestFruitTask",
+    "instruction": "Put the biggest fruit into the bowl",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "size_reasoning"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L104",
+    "task_file": "xr_smallest_item.py",
+    "scene": "xr_size_smallest_item.usda",
+    "category": "XZ",
+    "category_name": "Complex References - Size",
+    "description": "XrSmallestItemTask",
+    "instruction": "Put the smallest item on the table into the bowl",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "size_reasoning"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L105",
+    "task_file": "xr_tallest_shortest_can.py",
+    "scene": "xr_size_tallest_shortest_can.usda",
+    "category": "XZ",
+    "category_name": "Complex References - Size",
+    "description": "XrTallestShortestCanTask",
+    "instruction": "Put the tallest can into the bowl and the shortest can into the box",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "size_reasoning"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L106",
+    "task_file": "xr_extremes_to_bin.py",
+    "scene": "xr_size_extremes_to_bin.usda",
+    "category": "XZ",
+    "category_name": "Complex References - Size",
+    "description": "XrExtremesToBinTask",
+    "instruction": "Put the largest and the smallest items into the bin \u2014 leave the middle-sized one on the table",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "size_reasoning"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L107",
+    "task_file": "xr_sort_three_bowls.py",
+    "scene": "xr_size_sort_three_bowls.usda",
+    "category": "XZ",
+    "category_name": "Complex References - Size",
+    "description": "XrSortThreeBowlsTask",
+    "instruction": "Sort the three fruits by size into the three bowls \u2014 put the smallest in the left bowl, the medium one in the middle bowl, and the biggest in the right bowl",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "size_reasoning",
+      "sorting"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L108",
+    "task_file": "xr_smaller_than.py",
+    "scene": "xr_size_smaller_than.usda",
+    "category": "XZ",
+    "category_name": "Complex References - Size",
+    "description": "XrSmallerThanTask",
+    "instruction": "Move all fruits that are smaller than the orange into the bowl",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "size_reasoning"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L109",
+    "task_file": "xr_sort_big_small.py",
+    "scene": "xr_size_sort_big_small.usda",
+    "category": "XZ",
+    "category_name": "Complex References - Size",
+    "description": "XrSortBigSmallTask",
+    "instruction": "Sort the items by size: put the two biggest into the bin and the two smallest into the bowl",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "size_reasoning",
+      "sorting"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L110",
+    "task_file": "xr_biggest_separate.py",
+    "scene": "xr_size_biggest_separate.usda",
+    "category": "XZ",
+    "category_name": "Complex References - Size",
+    "description": "XrBiggestSeparateTask",
+    "instruction": "Put all fruits except the biggest one into the bowl, and put the biggest fruit into the bin",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "size_reasoning",
+      "negation"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L111",
+    "task_file": "xr_second_from_left.py",
+    "scene": "xr_count_second_from_left.usda",
+    "category": "XO",
+    "category_name": "Complex References - Order",
+    "description": "XrSecondFromLeftTask",
+    "instruction": "Four fruits are lined up. Put only the second one from the left into the bowl",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "counting"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L112",
+    "task_file": "xr_second_from_left_five.py",
+    "scene": "xr_count_second_from_left_five.usda",
+    "category": "XO",
+    "category_name": "Complex References - Order",
+    "description": "XrSecondFromLeftFiveTask",
+    "instruction": "Five items are lined up. Put only the second one from the left into the basket",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "counting"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L113",
+    "task_file": "xr_first_last.py",
+    "scene": "xr_count_first_last.usda",
+    "category": "XO",
+    "category_name": "Complex References - Order",
+    "description": "XrFirstLastTask",
+    "instruction": "Four items are in a row. Put the first and the last into the bowl",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "counting"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L114",
+    "task_file": "xr_second_fourth.py",
+    "scene": "xr_count_second_fourth.usda",
+    "category": "XO",
+    "category_name": "Complex References - Order",
+    "description": "XrSecondFourthTask",
+    "instruction": "Five fruits are lined up. Put the second and the fourth from the left onto the cutting board",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "counting"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L115",
+    "task_file": "xr_every_other.py",
+    "scene": "xr_count_every_other.usda",
+    "category": "XO",
+    "category_name": "Complex References - Order",
+    "description": "XrEveryOtherTask",
+    "instruction": "Five items are in a row. Move every other one into the bin, starting from the first on the left",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "counting"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L116",
+    "task_file": "xr_three_leftmost.py",
+    "scene": "xr_count_three_leftmost.usda",
+    "category": "XO",
+    "category_name": "Complex References - Order",
+    "description": "XrThreeLeftmostTask",
+    "instruction": "Five items are in a row. Put the three leftmost ones into the bin",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "counting"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L117",
+    "task_file": "xr_four_from_right.py",
+    "scene": "xr_count_four_from_right.usda",
+    "category": "XO",
+    "category_name": "Complex References - Order",
+    "description": "XrFourFromRightTask",
+    "instruction": "Five items are in a row. Starting from the right, put the first four into the bowl",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "counting"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L118",
+    "task_file": "xr_odd_even.py",
+    "scene": "xr_count_odd_even.usda",
+    "category": "XO",
+    "category_name": "Complex References - Order",
+    "description": "XrOddEvenTask",
+    "instruction": "Five items are in a row. Put the odd-numbered ones (1st, 3rd, 5th) into the bowl, and the even-numbered ones (2nd, 4th) into the bin",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "counting"
+    ],
+    "episode_length_s": 150
+  },
+  {
+    "id": "L119",
+    "task_file": "xr_empty_container.py",
+    "scene": "xr_negate_empty_container.usda",
+    "category": "XN",
+    "category_name": "Complex References - Negation",
+    "description": "XrEmptyContainerTask",
+    "instruction": "One container is empty and one has something in it. Put the block into the empty container",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "negation"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L120",
+    "task_file": "xr_non_fruit.py",
+    "scene": "xr_negate_non_fruit.usda",
+    "category": "XN",
+    "category_name": "Complex References - Negation",
+    "description": "XrNonFruitTask",
+    "instruction": "Three items are on the table \u2014 two are fruits and one is not. Put the non-fruit into the vase",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "negation"
+    ],
+    "episode_length_s": 30
+  },
+  {
+    "id": "L121",
+    "task_file": "xr_except_orange.py",
+    "scene": "xr_negate_except_orange.usda",
+    "category": "XN",
+    "category_name": "Complex References - Negation",
+    "description": "XrExceptOrangeTask",
+    "instruction": "Put all the fruits into the bowl except the orange",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "negation"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L122",
+    "task_file": "xr_except_blocks.py",
+    "scene": "xr_negate_except_blocks.usda",
+    "category": "XN",
+    "category_name": "Complex References - Negation",
+    "description": "XrExceptBlocksTask",
+    "instruction": "Move everything on the table into the bin except the blocks",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "negation"
+    ],
+    "episode_length_s": 60
+  },
+  {
+    "id": "L123",
+    "task_file": "xr_except_cans.py",
+    "scene": "xr_negate_except_cans.usda",
+    "category": "XN",
+    "category_name": "Complex References - Negation",
+    "description": "XrExceptCansTask",
+    "instruction": "Put all items on the table into the bowl except the cans",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "negation"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L124",
+    "task_file": "xr_except_tallest.py",
+    "scene": "xr_negate_except_tallest.usda",
+    "category": "XN",
+    "category_name": "Complex References - Negation",
+    "description": "XrExceptTallestTask",
+    "instruction": "Put all the cans into the crate except the tallest one",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "negation",
+      "size_reasoning"
+    ],
+    "episode_length_s": 90
+  },
+  {
+    "id": "L125",
+    "task_file": "xr_two_exceptions.py",
+    "scene": "xr_negate_two_exceptions.usda",
+    "category": "XN",
+    "category_name": "Complex References - Negation",
+    "description": "XrTwoExceptionsTask",
+    "instruction": "Put every item on the table into the bowl except the red block and the tuna can",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "negation"
+    ],
+    "episode_length_s": 120
+  },
+  {
+    "id": "L126",
+    "task_file": "xr_group_without_can.py",
+    "scene": "xr_negate_group_without_can.usda",
+    "category": "XN",
+    "category_name": "Complex References - Negation",
+    "description": "XrGroupWithoutCanTask",
+    "instruction": "Items are arranged in two groups on either side of the wall of blocks. Put all items from the group that does NOT contain a can into the bowl",
+    "attributes": [
+      "complex_reference",
+      "semantics",
+      "negation",
+      "spatial"
+    ],
+    "episode_length_s": 90
+  }
+]

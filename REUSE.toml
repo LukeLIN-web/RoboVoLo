@@ -1,0 +1,33 @@
+version = 1
+SPDX-PackageName = "RoboVoLo"
+SPDX-PackageSupplier = "NVIDIA CORPORATION & AFFILIATES"
+SPDX-PackageDownloadLocation = "https://github.com/NVlabs/RoboVoLo"
+
+[[annotations]]
+path = [
+  ".gitattributes",
+  ".gitignore",
+  "ASSET_LICENSES.md",
+  "CONTRIBUTING.md",
+  "LICENSE",
+  "README.md",
+  "SECURITY.md",
+  "THIRD_PARTY_NOTICES.md",
+  "assets/objects/art_shapes/README.md",
+  "assets/objects/chemistry_cubes/README.md",
+  "assets/objects/math_wood_cubes/README.md",
+  "images/**",
+  "pack.json",
+  "requirements.txt",
+  "scenes/**",
+  "tasks.json",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved."
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = "assets/objects/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES and respective asset contributors."
+SPDX-License-Identifier = "Apache-2.0 AND CC0-1.0"
